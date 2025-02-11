@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTTP & Network Flow Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Real-Time HTTP & Network Simulation</h1>
+    
+    <div class="controls">
+        <label for="method">Choose an HTTP Method:</label>
+        <select id="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+            <option value="OPTIONS">OPTIONS</option>
+            <option value="HEAD">HEAD</option>
+            <option value="PATCH">PATCH</option>
+        </select>
+        
+        <button id="sendRequest">Send Request</button>
+    </div>
+    
+    <div class="container">
+        <div class="box" id="simulationBox">Awaiting request...</div>
+        <div class="box" id="networkFlow"></div>
+        <div class="box" id="security"></div>
+        <div class="box" id="requestResponse"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
